@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Post Blog!</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+  </head>
+
+  <body> 
+    <div id="main">
+      <form method="post">
+	<div align="center">
+	  <h2>Title</h2>
+	  <textarea id="input" name="subject" cols="40" style="resize:none">{{subject}}</textarea>
+	  <h2>Enter your blog<h2>
+	  <textarea id="input" name="content" cols="100" rows="30">{{content}}</textarea>
+	  <textarea id="input" name="sec_key" cols="40" style="resize:none">{{sec_key}}</textarea>
+          <div><input type="submit" value="Post"></div>
+	  <div style="color:red">{{error}}</div>
+	</div>
+      </form>
+    </div>
+    <footer>
+      <p>&copy; Abhishek Bhattacharjee 2014 | Uses google app engine | Python for backend | <a href="http://www.gnu.org/software/emacs/">Emacs</a> for editing </p>
+    </footer>
+
+  </body>
+</html>   

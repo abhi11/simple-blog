@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+  </head>
+
+  <body>
+    {% for blog in blogs %} 
+    <div id="main">
+      <h1>{{blog.subject}}</h1>    
+      <div id="content">
+	  <h3>{{blog.datestr}}</h3>
+	  <p>
+	    {{blog.content}}
+	  </p>
+	  <hr id="hr">
+      </div>
+    </div>
+    {% endfor %} 
+    <footer>
+      <p>&copy; Abhishek Bhattacharjee 2014 | Uses google app engine | Python for backend | <a href="http://www.gnu.org/software/emacs/">Emacs</a> for editing </p>
+    </footer>
+  </body>
+</html>
